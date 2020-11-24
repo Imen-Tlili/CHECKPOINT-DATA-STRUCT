@@ -1,0 +1,37 @@
+//SUM OF DISTINCT ELEMENTS ALGO1
+ALGORITHM Sum_distinct_elements
+VAR
+  set1 : ARRAY_OF INTEGER[n];
+  set2 : ARRAY_OF INTEGER[m];
+   i,j,n,m: INTEGER;
+BEGIN
+   FOR i FROM 0 TO n DO
+      For j FROM 0 TO m DO
+      sum:=0;
+        IF (set1[i] != set2[j]) THEN sum:+=set1[i];
+write('The sum of distinct elements is', sum);
+END
+//SUM OF DISTINCT ELEMENTS ALGO2
+AGORITHM Sum_distinct_version_2
+
+hstr1: HASH_TABLE<INTEGER,INTEGER>;
+
+
+
+
+
+
+/////////////SUM OF OVERLAPPING ELEMENTS
+ALGORITHM Sum_overlapping_elements
+VAR
+  set1 : ARRAY_OF INTEGER[n];
+  set2 : ARRAY_OF INTEGER[m];
+   i,j,n,m: INTEGER;
+BEGIN
+   FOR i FROM 0 TO n DO{
+      For j FROM 0 TO m DO'
+      sum:=0;
+        IF{ (set1[i] == set2[j]) THEN sum:=set1[i];}
+      sum:=2*sum;
+write('The sum of overlapping elements is', sum);
+END
